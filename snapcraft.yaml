@@ -1,0 +1,30 @@
+name: icon-theme-yaru-cinnamon
+build-base: core24
+base: bare
+version: '25.04.1'
+platforms:
+  all:
+    build-on: [amd64]
+    build-for: [all]
+summary: Yaru cinnamon icon theme
+description: |
+  A Snap that allows you to use Yaru cinnamon icon theme in Snap apps
+grade: stable
+confinement: strict
+
+slots:
+  icon-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/icons/Ubuntu-Cinnamon
+        - $SNAP/share/icons/Yaru-cinnamon
+        - $SNAP/share/icons/Yaru-cinnamon
+parts:
+  icon-themes:
+    plugin: dump
+    source: http://archive.ubuntu.com/ubuntu/pool/universe/u/ubuntucinnamon-environment/yaru-cinnamon-theme-icon_25.04.1_all.deb
+    organize:
+      usr/share/icons: share/icons
+    prime:
+      - share/icons
