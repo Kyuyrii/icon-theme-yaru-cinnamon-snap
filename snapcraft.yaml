@@ -19,7 +19,7 @@ slots:
       read:
         - $SNAP/share/icons/Ubuntu-Cinnamon
         - $SNAP/share/icons/Yaru-cinnamon
-        - $SNAP/share/icons/Yaru-cinnamon
+        - $SNAP/share/icons/Yaru-cinnamon-dark
 parts:
   icon-themes:
     plugin: dump
