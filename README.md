@@ -1,0 +1,1 @@
+# icon-theme-yaru-cinnamon-snap
